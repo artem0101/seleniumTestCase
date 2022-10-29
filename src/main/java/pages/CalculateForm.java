@@ -17,7 +17,6 @@ public class CalculateForm {
         this.webDriver = webDriver;
     }
 
-
     /**
      * Производит рассчёт в соответствии с введёнными символами.
      *
@@ -64,8 +63,8 @@ public class CalculateForm {
     }
 
     private void clickByCalculateButton(String button) {
-        String CALCULATE_BUTTON_TEMPLATE = "//*[@class='card-section']//div[text() = '%s']";
-        var elementLocator = String.format(CALCULATE_BUTTON_TEMPLATE, button);
+        String calculateTemplateButton = "//*[@class='card-section']//div[text() = '%s']";
+        var elementLocator = String.format(calculateTemplateButton, button);
         webDriver.findElement(By.xpath(elementLocator)).click();
     }
 

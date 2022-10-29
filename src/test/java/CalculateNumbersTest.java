@@ -22,7 +22,7 @@ public class CalculateNumbersTest {
     @BeforeEach
     public void precondition() {
         WebDriverManager.chromedriver().setup();
-        String testUrl = "http://google.com";
+        var testUrl = "http://google.com";
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(testUrl);
